@@ -4,7 +4,7 @@ Overview
 This is a sleek, modern portfolio website template designed for developers, designers, and creative professionals. It features elegant animations and interactive elements to showcase your work in an engaging way while maintaining a professional appearance.
 
 Key Features
-✨ Eye-Catching Animations:
+#✨ Eye-Catching Animations:
 
 Loading screen with spinner animation
 
@@ -18,7 +18,7 @@ Typewriter text animations
 
 Smooth parallax effects
 
-🎨 Modern Design Elements:
+#🎨 Modern Design Elements:
 
 Clean, minimalist interface
 
@@ -30,7 +30,7 @@ Professional color scheme (easily customizable)
 
 Attractive project showcase section
 
-⚡ Performance Optimized:
+#⚡ Performance Optimized:
 
 Lightweight animations
 
@@ -79,7 +79,7 @@ Replace placeholder images in the images folder
 
 Optimize images for web (recommended size <500KB)
 
-Styling:
+#Styling:
 
 Modify colors in the :root CSS variables
 
@@ -91,7 +91,7 @@ Form Submission:
 
 Connect the contact form to your preferred backend service
 
-Browser Support
+#Browser Support
 The portfolio is tested and works on:
 
 Chrome (latest)
