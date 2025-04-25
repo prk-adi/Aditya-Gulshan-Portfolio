@@ -140,6 +140,7 @@ nav {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--primary-color);
+    z-index: 1001;
 }
 
 .nav-links {
@@ -181,14 +182,31 @@ nav {
 .hamburger {
     display: none;
     cursor: pointer;
+    width: 30px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1001;
 }
 
 .hamburger .line {
     width: 25px;
     height: 3px;
     background-color: var(--dark-color);
-    margin: 5px;
+    margin: 5px 0;
     transition: all 0.3s ease;
+}
+
+.hamburger.active .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 /* Hero Section */
@@ -725,11 +743,26 @@ footer {
 }
 
 /* Responsive Styles */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 40px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width: 992px) {
     .hero .container,
     .about-content,
     .contact-content {
         flex-direction: column;
+        text-align: center;
     }
     
     .hero-content,
@@ -744,11 +777,19 @@ footer {
         max-width: 400px;
         margin: 0 auto;
     }
+    
+    .about-image {
+        text-align: center;
+    }
+    
+    .cta-buttons {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 768px) {
     .hamburger {
-        display: block;
+        display: flex;
     }
     
     .nav-links {
@@ -761,7 +802,8 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transition: left 0.3s ease;
+        transition: all 0.5s ease;
+        z-index: 999;
     }
     
     .nav-links.active {
@@ -780,11 +822,6 @@ footer {
         font-size: 2rem;
     }
     
-    .cta-buttons {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
     .projects {
         grid-template-columns: 1fr;
     }
@@ -796,18 +833,35 @@ footer {
 
 @media (max-width: 576px) {
     .container {
-        padding: 0 1.5rem;
+        padding: 0 20px;
     }
     
     section {
         padding: 3rem 0;
     }
     
-    .contact-content {
-        padding: 2rem;
+    .hero-content h1 {
+        font-size: 2rem;
     }
     
-    .hero {
-        padding-top: 6rem;
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    .skill-tags span {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+    
+    .project-links {
+        flex-direction: column;
+    }
+    
+    .contact-content {
+        padding: 2rem;
     }
 }
