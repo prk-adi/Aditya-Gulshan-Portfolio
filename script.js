@@ -110,33 +110,33 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Mobile Navigation Toggle
+    // Mobile Navigation Toggle (consolidated version)
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
-    const links = document.querySelectorAll('.nav-links li');
+    const navItems = document.querySelectorAll('.nav-links li');
 
     if (hamburger && navLinks) {
         hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
             navLinks.classList.toggle('active');
-            hamburger.classList.toggle('toggle');
             
             // Animate Links
-            links.forEach((link, index) => {
-                if (link.style.animation) {
-                    link.style.animation = '';
+            navItems.forEach((item, index) => {
+                if (item.style.animation) {
+                    item.style.animation = '';
                 } else {
-                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                    item.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
                 }
             });
         });
 
         // Close mobile menu when clicking a link
-        links.forEach(link => {
+        document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
                 navLinks.classList.remove('active');
-                hamburger.classList.remove('toggle');
-                links.forEach(link => {
-                    link.style.animation = '';
+                navItems.forEach(item => {
+                    item.style.animation = '';
                 });
             });
         });
@@ -164,6 +164,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     top: targetElement.offsetTop - 80,
                     behavior: 'smooth'
                 });
+
+                // Close mobile menu if open
+                if (navLinks && navLinks.classList.contains('active')) {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                    navItems.forEach(item => {
+                        item.style.animation = '';
+                    });
+                }
             }
         });
     });
