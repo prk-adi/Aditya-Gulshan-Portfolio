@@ -1,122 +1,109 @@
 # Aditya-Gulshan-Portfolio
-Modern Portfolio Website with Animations
-Overview
-This is a sleek, modern portfolio website template designed for developers, designers, and creative professionals. It features elegant animations and interactive elements to showcase your work in an engaging way while maintaining a professional appearance.
 
-Key Features
-#✨ Eye-Catching Animations:
 
-Loading screen with spinner animation
+## Overview
+This is a modern, responsive portfolio website designed to showcase professional work, skills, and contact information. The website features smooth animations, interactive elements, and a clean, user-friendly interface.
 
-Custom animated cursor with hover effects
+## Features
 
-Scroll-triggered reveal animations
+### Core Functionality
+- **Responsive Design**: Fully responsive layout that works on all device sizes
+- **Loading Animation**: Elegant pre-loader animation for better user experience
+- **Custom Cursor**: Interactive custom cursor with hover effects
+- **Smooth Scrolling**: Seamless navigation between sections
+- **Mobile-Friendly Navigation**: Hamburger menu for mobile devices with smooth animations
 
-3D tilt effects on project cards
+### Interactive Elements
+- **Animated Project Cards**: Tilt effect on hover with smooth transitions
+- **Text Animations**: Letter-by-letter reveal on hover for selected elements
+- **Parallax Effects**: Subtle background movement based on mouse position
+- **Form Validation**: Contact form with client-side validation
+- **Social Media Integration**: Clickable social media links with hover effects
 
-Typewriter text animations
+### Technical Highlights
+- **CSS Variables**: Consistent theming using CSS custom properties
+- **Modern Animations**: Utilizing AOS (Animate On Scroll) and custom CSS animations
+- **Performance Optimized**: Efficient JavaScript with event delegation
+- **Accessibility**: Semantic HTML structure and proper ARIA attributes
 
-Smooth parallax effects
+## Installation & Setup
 
-#🎨 Modern Design Elements:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/prk-adi/Aditya-Gulshan-Portfolio.git
+   cd Aditya-Gulshan-Portfolio
+   ```
 
-Clean, minimalist interface
+2. **Install dependencies** (if any):
+   ```bash
+   npm install
+   ```
 
-Responsive layout for all devices
+3. **Run the project**:
+   - Simply open `index.html` in your browser
+   - Or use a local server for development:
+     ```bash
+     npx serve
+     ```
 
-Interactive hover states
+## Dependencies
 
-Professional color scheme (easily customizable)
+- [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/) - For scroll-triggered animations
+- [Font Awesome](https://fontawesome.com/) - For icons
+- [Google Fonts](https://fonts.google.com/) - For typography
 
-Attractive project showcase section
+## Customization
 
-#⚡ Performance Optimized:
+To personalize the portfolio:
 
-Lightweight animations
+1. **Update content**:
+   - Edit the HTML files to change text content
+   - Replace placeholder images in the `images/` folder
 
-Mobile-friendly (animations disabled on small screens)
+2. **Modify styling**:
+   - Adjust colors in the `:root` variables in CSS
+   - Update breakpoints in the media queries as needed
 
-Fast loading times
+3. **Configure animations**:
+   - Modify animation durations and effects in the JavaScript file
+   - Adjust AOS initialization settings
 
-Semantic HTML structure
+## Browser Support
 
-Technologies Used
-HTML5 - Semantic markup
+The website is tested and works on:
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-CSS3 - Custom animations and transitions
+## Deployment
 
-JavaScript - Interactive elements
+The project can be deployed to any static hosting service:
+- Netlify
+- Vercel
+- GitHub Pages
+- Firebase Hosting
 
-AOS Library - Animate On Scroll
+## Contributing
 
-ScrollReveal - Scroll-triggered animations
+Contributions are welcome! Please follow these steps:
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
 
-Font Awesome - Icon set
+## License
 
-Installation
-Clone the repository:
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-bash
-git clone https://github.com/prk-adi/Aditya-Gulshan-Portfolio
-Navigate to the project directory:
+## Contact
 
-bash
-cd Aditya-Gulshan-Portfolio
-Open index.html in your browser or deploy to your preferred hosting service.
+For questions or feedback, please contact:
+- **Name**: Aditya Gulshan
+- **Email**: gulshanadity@gmail.com
+- **Portfolio**: https://prk-adi.github.io/Aditya-Gulshan-Portfolio/
 
-Customization
-Content:
+---
 
-Replace placeholder text in index.html with your information
-
-Add your projects to the work section
-
-Update contact details
-
-Images:
-
-Replace placeholder images in the images folder
-
-Optimize images for web (recommended size <500KB)
-
-#Styling:
-
-Modify colors in the :root CSS variables
-
-Adjust animation timings in script.js
-
-Change fonts in the CSS
-
-Form Submission:
-
-Connect the contact form to your preferred backend service
-
-#Browser Support
-The portfolio is tested and works on:
-
-Chrome (latest)
-
-Firefox (latest)
-
-Safari (latest)
-
-Edge (latest)
-
-Mobile support includes:
-
-iOS Safari
-
-Chrome for Android
-
-License
-This project is open-source and available under the MIT License.
-
-Preview
-Portfolio Preview
-
-Credits
-Animate.css for animation utilities
-
-AOS library for scroll animations
-
-Font Awesome for icons
+**Note**: Remember to update all placeholder content (images, personal information, etc.) before deploying your live portfolio.
