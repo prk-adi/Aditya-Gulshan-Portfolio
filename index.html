@@ -5,58 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya Gulshan | Portfolio</title>
     
+    <!-- External Libraries -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-
-    <style>
-        #idp-overlay {
-            position: fixed;
-            inset: 0;
-            width: 100vw;
-            height: 100vh;
-            background: #000;
-            z-index: 999999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-        #idp-iframe {
-            width: 100vw;
-            height: 100vh;
-            border: none;
-            background: transparent;
-        }
-        #idp-status {
-            position: fixed;
-            top: 12px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1000000;
-            color: white;
-            background: #b91c1c;
-            padding: 8px 12px;
-            border-radius: 8px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 13px;
-            display: none;
-        }
-    </style>
 </head>
 <body>
-
+    <!-- ID Protocol Verification Overlay -->
     <div id="idp-overlay">
         <div id="idp-status">Error</div>
         <iframe id="idp-iframe" src="about:blank" allowfullscreen="" title="ID Protocol — Google Verify"></iframe>
     </div>
 
+    <!-- Loading Animation -->
     <div class="loader">
         <div class="loader-circle"></div>
         <div class="loader-text">Loading</div>
     </div>
 
+    <!-- Cursor Animation -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
@@ -65,10 +35,10 @@
             <nav>
                 <div class="logo" data-aos="fade-down">AG</div>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li data-aos="fade-down" data-aos-delay="100"><a href="#home">Home</a></li>
+                    <li data-aos="fade-down" data-aos-delay="200"><a href="#about">About</a></li>
+                    <li data-aos="fade-down" data-aos-delay="300"><a href="#work">Work</a></li>
+                    <li data-aos="fade-down" data-aos-delay="400"><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="hamburger">
                     <div class="line"></div>
@@ -79,126 +49,156 @@
         </div>
     </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="animate__animated animate__fadeInUp">Hi, I'm <span class="text-animate">Aditya Gulshan</span></h1>
-                    <h2 class="animate__animated animate__fadeInUp animate__delay-1s">Web Developer</h2>
-                    <p class="animate__animated animate__fadeInUp animate__delay-2s">I create beautiful, functional websites with a focus on user experience.</p>
-                    <div class="cta-buttons animate__animated animate__fadeInUp animate__delay-3s">
-                        <a href="#work" class="btn primary hover-effect">View My Work</a>
-                        <a href="#contact" class="btn secondary hover-effect">Contact Me</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="image-wrapper">
-                        <img src="wmremove-transformed..._imresizer.jpg" alt="Aditya Gulshan" class="parallax-image">
-                    </div>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate__animated animate__fadeInUp">Hi, I'm <span class="text-animate">Aditya Gulshan</span></h1>
+                <h2 class="animate__animated animate__fadeInUp animate__delay-1s">Web Developer</h2>
+                <p class="animate__animated animate__fadeInUp animate__delay-2s">I create beautiful, functional websites with a focus on user experience.</p>
+                <div class="cta-buttons animate__animated animate__fadeInUp animate__delay-3s">
+                    <a href="#work" class="btn primary hover-effect">View My Work</a>
+                    <a href="#contact" class="btn secondary hover-effect">Contact Me</a>
                 </div>
             </div>
-        </section>
-
-        <section id="about" class="about">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>I'm a passionate developer with 1 year of experience creating digital experiences. My expertise includes JavaScript and responsive design principles.</p>
-                        <p>Think Different. When I'm not coding, you can find me hiking, practicing photography, or exploring new coffee shops.</p>
-                        <div class="skills">
-                            <h3>My Skills</h3>
-                            <div class="skill-tags">
-                                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span>
-                                <span>C/C++</span><span>Java</span><span>Linux</span><span>Git</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-image">
-                        <img src="1744873350216_po41lr_2_1.jpg" alt="About Aditya" data-aos="fade-left">
-                    </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="wmremove-transformed..._imresizer.jpg" alt="Aditya Gulshan" class="parallax-image">
                 </div>
             </div>
-        </section>
-
-        <section id="work" class="work">
-            <div class="container">
-                <h2 class="section-title">My Work</h2>
-                <div class="projects">
-                    <div class="project-card" data-aos="fade-up">
-                        <div class="project-image"><img src="Capture 2.PNG" alt="Kisan College"></div>
-                        <div class="project-info">
-                            <h3>Kisan College Website</h3>
-                            <p>A responsive, modern website featuring elegant animations and interactive elements.</p>
-                            <div class="project-links">
-                                <a href="https://prk-adi.github.io/College-website-/" class="btn small">Live Demo</a>
-                                <a href="https://github.com/prk-adi/College-website-" class="btn small secondary">Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
+        </div>
+        <div class="scroll-down">
+            <div class="mouse">
+                <div class="wheel"></div>
             </div>
-        </section>
+            <div class="arrows">
+                <span class="arrow"></span>
+                <span class="arrow"></span>
+                <span class="arrow"></span>
+            </div>
+        </div>
+    </section>
 
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">Connect With Me</h2>
-                <div class="contact-content">
-                    <div class="contact-info" data-aos="fade-right">
-                        <h3>Let's collaborate</h3>
-                        <p>I'm always open to discussing new projects or creative ideas.</p>
-                        <div class="contact-details">
-                            <div class="contact-item"><i class="fas fa-envelope"></i> <span>gulshanadity@gmail.com</span></div>
-                            <div class="contact-item"><i class="fas fa-phone"></i> <span>+91 9570418101</span></div>
-                            <div class="contact-item"><i class="fas fa-map-marker-alt"></i> <span>Nalanda, Bihar</span></div>
-                        </div>
-                        <div class="social-links">
-                            <a href="https://github.com/prk-adi"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/prk-adi"><i class="fab fa-linkedin"></i></a>
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate developer with 1 year of experience creating digital experiences. My expertise includes JavaScript, and responsive design principles.</p>
+                    <p>When I'm not coding, you can find me hiking, photography, or exploring new coffee shops in my city. Think Different</p>
+                    <div class="skills">
+                        <h3>My Skills</h3>
+                        <div class="skill-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>C/C++</span>
+                            <span>Java</span>
+                            <span>Linux</span>
+                            <span>Git</span>
                         </div>
                     </div>
                 </div>
+                <div class="about-image">
+                    <img src="1744873350216_po41lr_2_1.jpg" alt="About Aditya" data-aos="fade-left">
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <section id="work" class="work">
+        <div class="container">
+            <h2 class="section-title">My Work</h2>
+            <div class="projects">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="Capture 2.PNG" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Kisan College Website - Modern Design with Animations</h3>
+                        <p>Overview A responsive, modern website for Kisan College featuring elegant animations and interactive elements. This single-page application showcases the college's programs, facilities, admission process, and contact information with smooth scrolling navigation and engaging visual effects.</p>
+                        <div class="project-links">
+                            <a href="https://prk-adi.github.io/College-website-/" class="btn small hover-effect">Live Demo</a>
+                            <a href="https://github.com/prk-adi/College-website-" class="btn small secondary hover-effect">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="Capture3.PNG" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Clone GitHub Profile</h3>
+                        <p>create a simple GitHub profile page clone using HTML and CSS. This will give you the basic structure and styling similar to a GitHub profile</p>
+                        <div class="project-links">
+                            <a href="https://prk-adi.github.io/Clone-GitHub-Profile/" class="btn small hover-effect">Live Demo</a>
+                            <a href="https://github.com/prk-adi/Clone-GitHub-Profile" class="btn small secondary hover-effect">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="Capture5.PNG" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>PRK-Music-Player</h3>
+                        <p>A modern, responsive music player web application with drag-and-drop functionality, playlist management, and visual animations. Features ✨ Interactive Playlist 🎧</p>
+                        <div class="project-links">
+                            <a href="https://prk-adi.github.io/PRK-Music-Player/" class="btn small hover-effect">Live Demo</a>
+                            <a href="https://github.com/prk-adi/PRK-Music-Player" class="btn small secondary hover-effect">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Connect With Me</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's collaborate</h3>
+                    <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>gulshanadity@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9570418101</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Nalanda, Bihar</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/prk-adi"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/prk-adi"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/prk__adi"><i class="fab fa-twitter"></i></a>
+                        <a href="https://dribbble.com/prk_adi"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                    
+                    <div class="feedback-section">
+                        <a href="https://formsubmit.co/el/moniho" target="_blank" class="feedback-link hover-effect">
+                            <i class="fas fa-comment-alt"></i>
+                            <span>Share Your Feedback</span>
+                        </a>
+                        <p class="feedback-note">Your thoughts help me improve my work</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="script.js"></script>
-
-    <script>
-        (function() {
-            var STORAGE_KEY = 'idp_verified_until';
-            var TTL_MS = 24 * 60 * 60 * 1000;
-
-            function isVerified() {
-                try {
-                    var v = localStorage.getItem(STORAGE_KEY);
-                    return v && parseInt(v, 10) > Date.now();
-                } catch (e) { return false; }
-            }
-
-            function hideOverlay() { 
-                var o = document.getElementById('idp-overlay');
-                if (o) o.style.display = 'none'; 
-            }
-
-            if (isVerified()) hideOverlay();
-
-            window.addEventListener('message', function(evt) {
-                if (evt.data === 'google-verify-success' || (evt.data && evt.data.action === 'google_verified')) {
-                    localStorage.setItem(STORAGE_KEY, String(Date.now() + TTL_MS));
-                    hideOverlay();
-                }
-            });
-
-            // Set Iframe Source
-            var iframe = document.getElementById('idp-iframe');
-            if (iframe) {
-                var base = 'https://dev-app-id-protocol.vercel.app/google-verify-modal-viewer.html';
-                iframe.src = base + '?host_origin=' + encodeURIComponent(window.location.origin);
-            }
-        })();
-    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://dev-app-id-protocol.vercel.app/google-verify-embed.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
