@@ -1,109 +1,88 @@
-# Aditya-Gulshan-Portfolio
+# Aditya Gulshan Portfolio
 
+This is a responsive BCA fresher portfolio website built with HTML, CSS, and JavaScript.
 
-## Overview
-This is a modern, responsive portfolio website designed to showcase professional work, skills, and contact information. The website features smooth animations, interactive elements, and a clean, user-friendly interface.
+It is designed to present:
 
-## Features
+- personal introduction
+- career objective
+- education
+- technical skills
+- academic and personal projects
+- GitHub profile
+- contact information
 
-### Core Functionality
-- **Responsive Design**: Fully responsive layout that works on all device sizes
-- **Loading Animation**: Elegant pre-loader animation for better user experience
-- **Custom Cursor**: Interactive custom cursor with hover effects
-- **Smooth Scrolling**: Seamless navigation between sections
-- **Mobile-Friendly Navigation**: Hamburger menu for mobile devices with smooth animations
+## Project Type
 
-### Interactive Elements
-- **Animated Project Cards**: Tilt effect on hover with smooth transitions
-- **Text Animations**: Letter-by-letter reveal on hover for selected elements
-- **Parallax Effects**: Subtle background movement based on mouse position
-- **Form Validation**: Contact form with client-side validation
-- **Social Media Integration**: Clickable social media links with hover effects
+Static portfolio website for internship, fresher job applications, and academic/professional presentation.
 
-### Technical Highlights
-- **CSS Variables**: Consistent theming using CSS custom properties
-- **Modern Animations**: Utilizing AOS (Animate On Scroll) and custom CSS animations
-- **Performance Optimized**: Efficient JavaScript with event delegation
-- **Accessibility**: Semantic HTML structure and proper ARIA attributes
+## Tech Stack
 
-## Installation & Setup
+- HTML5
+- CSS3
+- JavaScript
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/prk-adi/Aditya-Gulshan-Portfolio.git
-   cd Aditya-Gulshan-Portfolio
-   ```
+## Files
 
-2. **Install dependencies** (if any):
-   ```bash
-   npm install
-   ```
+- `index.html` - main portfolio structure
+- `styles.css` - styling and responsive layout
+- `script.js` - small interactive behavior
+- `Aditya_Gulshan_Resume.pdf` - downloadable resume
+- `199082947.jfif` - image used in the portfolio
 
-3. **Run the project**:
-   - Simply open `index.html` in your browser
-   - Or use a local server for development:
-     ```bash
-     npx serve
-     ```
+## How To Open
 
-## Dependencies
+1. Open `index.html` in any modern browser.
+2. No installation or build step is required.
 
-- [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/) - For scroll-triggered animations
-- [Font Awesome](https://fontawesome.com/) - For icons
-- [Google Fonts](https://fonts.google.com/) - For typography
+## Main Sections
+
+- Hero section
+- About
+- Career Objective
+- Skills
+- Areas of Interest
+- GitHub Profile
+- Education
+- Projects
+- Mini Projects
+- Strengths
+- Personal Details
+- Contact
+- Declaration
 
 ## Customization
 
-To personalize the portfolio:
+You can update the following easily:
 
-1. **Update content**:
-   - Edit the HTML files to change text content
-   - Replace placeholder images in the `images/` folder
+- name and summary in `index.html`
+- project details and links in `index.html`
+- contact information in `index.html`
+- colors, spacing, and layout in `styles.css`
+- resume file by replacing `Aditya_Gulshan_Resume.pdf`
 
-2. **Modify styling**:
-   - Adjust colors in the `:root` variables in CSS
-   - Update breakpoints in the media queries as needed
+## Responsive Design
 
-3. **Configure animations**:
-   - Modify animation durations and effects in the JavaScript file
-   - Adjust AOS initialization settings
+The layout is designed to work across:
 
-## Browser Support
+- desktop
+- tablet
+- mobile
 
-The website is tested and works on:
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+Responsive behavior is handled in `styles.css` using media queries.
 
-## Deployment
+## Useful Links Included
 
-The project can be deployed to any static hosting service:
-- Netlify
-- Vercel
-- GitHub Pages
-- Firebase Hosting
+- LinkedIn
+- GitHub
+- Live project link
+- Resume download
 
-## Contributing
+## Purpose
 
-Contributions are welcome! Please follow these steps:
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add some feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Open a Pull Request
+This portfolio is intended for:
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For questions or feedback, please contact:
-- **Name**: Aditya Gulshan
-- **Email**: gulshanadity@gmail.com
-- **Portfolio**: https://prk-adi.github.io/Aditya-Gulshan-Portfolio/
-
----
-
-**Note**: Remember to update all placeholder content (images, personal information, etc.) before deploying your live portfolio.
+- internship applications
+- fresher job applications
+- placement sharing
+- personal academic/professional presentation
